@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Luís Eduardo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active" onclick="showSection('home', this)"><i class="fas fa-user"></i> Início</li>
+            <li onclick="showSection('resume', this)"><i class="fas fa-file-alt"></i> Currículo</li>
+            <li onclick="showSection('repos', this)"><i class="fas fa-code-branch"></i> Projetos</li>
+        </ul>
+    </nav>
+
+    <section id="home" class="view active-view">
+        <div class="glass-card profile-card">
+            <div class="profile-header">
+                <div class="avatar-circle">LE</div>
+                <h1>Luís Eduardo Vale</h1>
+                <p class="subtitle">Desenvolvedor Java & Spring Boot</p>
+            </div>
+            <div class="profile-details">
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Fortaleza, Ceará</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>luiseduardovaledossantoslima@gmail.com</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(85) 99650-7131 / (85) 98732-7863</span>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-university"></i>
+                    <span>Unifor - Ciência da Computação (6º Semestre)</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Luisxxy" target="_blank" class="btn-social"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="btn-social"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://wa.me/5585996507131" target="_blank" class="btn-social"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="view">
+        <div class="paper-container">
+            <header class="resume-header">
+                <h1>Luís Eduardo Vale dos Santos Lima</h1>
+                <p>Estudante de Ciência da Computação | Desenvolvedor Backend</p>
+            </header>
+
+            <div class="resume-body">
+                <section>
+                    <h2>Sobre</h2>
+                    <p>Sou estudante de Ciência da Computação na Universidade de Fortaleza (6º semestre), com sólida base em programação e desenvolvimento de sistemas. Participo ativamente de projetos de extensão, aplicando conceitos de Orientação a Objetos em Java. Tenho foco em Java, Spring Boot e SQL, buscando sempre oportunidades que unam tecnologia e impacto positivo.</p>
+                </section>
+
+                <section>
+                    <h2>Experiência Profissional</h2>
+                    
+                    <div class="job-item">
+                        <h3>Estagiário de Implementação | Cardápio Web</h3>
+                        <span class="date">Junho 2025 - Novembro 2025 (6 meses) | Fortaleza, CE (Híbrido)</span>
+                        <ul>
+                            <li>Confecção de cardápios digitais e suporte técnico via CRISP.</li>
+                            <li>Manutenção em JavaScript para otimização de extensões e processos internos.</li>
+                            <li>Comunicação corporativa via Slack e participação em dailies.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <h3>Jovem Aprendiz Administrativo | Unifor</h3>
+                        <span class="date">Maio 2023 - Fevereiro 2025</span>
+                        <ul>
+                            <li>Recepcionista no setor de odontologia, auxiliando alunos e consultando banco de dados de pacientes.</li>
+                            <li>Resolução proativa de problemas administrativos e operacionais.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-item">
+                        <h3>Auxiliar de Escritório | Advocacia Lopes & Duarte</h3>
+                        <span class="date">Fevereiro 2021 - Novembro 2022</span>
+                        <ul>
+                            <li>Atendimento ao cliente via WhatsApp e E-mail, atuando na linha de frente do escritório.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Habilidades Técnicas</h2>
+                    <div class="tags">
+                        <span>Java</span> <span>Spring Boot</span> <span>SQL</span> <span>HTML/CSS</span> <span>JavaScript</span> <span>Kotlin</span> <span>Montagem de PCs</span>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2>Certificações & Projetos</h2>
+                    <ul class="simple-list">
+                        <li>Programação Front-End - Dankicode</li>
+                        <li>Sistemas Operacionais - Huawei</li>
+                        <li>Projeto de Extensão: Apoio Psicopedagógico Educacional</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section id="repos" class="view">
+        <div class="repos-container">
+            <div class="repo-card main-project">
+                <div class="repo-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                
+                <h3>E-Commerce Roni</h3>
+                
+                <p>
+                    Projeto de extensão universitária desenvolvido durante o 4º semestre. 
+                    Trata-se de uma aplicação Web completa para gerenciamento de vendas, 
+                    implementando arquitetura MVC, controle de produtos e interface amigável.
+                </p>
+                
+                <div class="repo-techs">
+                    <span>Java 17</span>
+                    <span>Spring Boot</span>
+                    <span>MySQL</span>
+                    <span>Thymeleaf</span>
+                    <span>HTML/CSS</span>
+                </div>
+                
+                <div class="repo-buttons">
+                    <a href="https://github.com/Luisxxy/E-Commerce-Roni" target="_blank" class="btn-repo">
+                        <i class="fab fa-github"></i> Acessar Código no GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showSection(sectionId, element) {
+            
+            document.querySelectorAll('.view').forEach(view => {
+                view.classList.remove('active-view');
+                view.style.display = 'none'; 
+            });
+            
+            document.querySelectorAll('.navbar li').forEach(li => {
+                li.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            activeSection.style.display = 'block';
+            setTimeout(() => {
+                activeSection.classList.add('active-view');
+            }, 10); 
+            
+            if(element) {
+                element.classList.add('active');
+            }
+        }
+        
+    </script>
+</body>
+</html>
